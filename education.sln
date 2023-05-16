@@ -53,6 +53,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "merge_sort", "merge_sort\me
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "shell_sort", "shell_sort\shell_sort.vcxproj", "{BED30C73-6DCB-4F31-9800-DFE2B1F4E2AB}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cyclically_shift_array", "cyclically_shift_array\cyclically_shift_array.vcxproj", "{53F4EB65-CFBE-42A1-88C3-FACB2B586C08}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -261,6 +263,14 @@ Global
 		{BED30C73-6DCB-4F31-9800-DFE2B1F4E2AB}.Release|x64.Build.0 = Release|x64
 		{BED30C73-6DCB-4F31-9800-DFE2B1F4E2AB}.Release|x86.ActiveCfg = Release|Win32
 		{BED30C73-6DCB-4F31-9800-DFE2B1F4E2AB}.Release|x86.Build.0 = Release|Win32
+		{53F4EB65-CFBE-42A1-88C3-FACB2B586C08}.Debug|x64.ActiveCfg = Debug|x64
+		{53F4EB65-CFBE-42A1-88C3-FACB2B586C08}.Debug|x64.Build.0 = Debug|x64
+		{53F4EB65-CFBE-42A1-88C3-FACB2B586C08}.Debug|x86.ActiveCfg = Debug|Win32
+		{53F4EB65-CFBE-42A1-88C3-FACB2B586C08}.Debug|x86.Build.0 = Debug|Win32
+		{53F4EB65-CFBE-42A1-88C3-FACB2B586C08}.Release|x64.ActiveCfg = Release|x64
+		{53F4EB65-CFBE-42A1-88C3-FACB2B586C08}.Release|x64.Build.0 = Release|x64
+		{53F4EB65-CFBE-42A1-88C3-FACB2B586C08}.Release|x86.ActiveCfg = Release|Win32
+		{53F4EB65-CFBE-42A1-88C3-FACB2B586C08}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

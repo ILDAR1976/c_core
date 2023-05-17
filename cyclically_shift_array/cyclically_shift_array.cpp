@@ -126,7 +126,7 @@ void shiftRight2(int* a, int n, int k) {
     // --------------------------------------------
     // any permutation is decomposed into a product 
     // of independent cycles
-    // 
+    // --------------------------------------------
     // permutation is a one - to - one mapping of 
     // elements 0, 1, 2, ..., n - 1.
     // s is represented as a product of d cycles 

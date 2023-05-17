@@ -1,4 +1,4 @@
-#include <stdio.h>
+﻿#include <stdio.h>
 #include <assert.h>
 
 #pragma warning(disable : 4996)
@@ -6,9 +6,11 @@
 int getFileLength(FILE*);
 int* readFromFile(FILE*, int);
 void writeInFile(FILE*, int*, int);
+int gcd(int, int);
 void shift(int*, int);
 void reverse(int*, int);
 void shiftRight(int*, int, int);
+void shiftRight2(int*, int, int);
 void print(int*, int);
 
 int main(int argc, char* argv[])
@@ -24,7 +26,7 @@ int main(int argc, char* argv[])
     print(a, n);
     shift(a, n);
     print(a, n);
-    shiftRight(a, n, 4);
+    shiftRight2(a, n, 4);
     print(a, n);
     FILE* out = fopen("../cyclically_shift_array/out.txt", "w");
     if (out == NULL) {
@@ -75,6 +77,17 @@ int getFileLength(FILE* f) {
     return n;
 }
 
+int gcd(int m, int n) {
+    // The Euclidean algorithm
+    int r;
+    while (n != 0) {
+        r = m % n;
+        m = n; n = r;
+    }
+    // n == 0 and gcd (m,n) = gcd(m0,n0)
+    return m;
+}
+
 void shift(int* a, int n) {
     if (n <= 0) return;
     int last = a[n - 1];
@@ -99,6 +112,50 @@ void shiftRight(int* a, int n, int k) {
     reverse(a, n-k);
     reverse(a+n-k, k);
     reverse(a, n);
+}
+
+// To understand this function you need to know
+// elementary number theory
+void shiftRight2(int* a, int n, int k) {
+    // Idea: starting from an element with
+    // index 0 and running its orbit while mapping 
+    // the indices s: i |--> (i+k) (mod n)
+    // --------------------------------------------
+    // the number of orbits is equal to the minimal 
+    // nonzero index in the orbit of the element 0
+    // --------------------------------------------
+    // any permutation is decomposed into a product 
+    // of independent cycles
+    // 
+    // permutation is a one - to - one mapping of 
+    // elements 0, 1, 2, ..., n - 1.
+    // s is represented as a product of d cycles 
+    // of length n / d.
+    // d = gcd(n, k)
+    // Elements of the orbit differ by numbers of 
+    // the form un + vk, where u, n belong to Z.
+    // I = { un + vk, where u, n belong to Z } is 
+    // an ideal in the ring Z which has the form d * Z.
+    // Indexes 0,1,2,...,d-1 generate different orbits.
+    k %= n;
+    if (n <= 0 || k == 0) return;
+    int nod = gcd(n, k);
+    int i = 0;
+    while (i < nod) { // orbital cycle
+        //pass the orbit of the element i
+        int x = a[i]; // initial orbit element
+        int j = i + k;
+        if (i > n) j -= n;
+        while (i != j)  {
+            int y = a[j];
+            a[j] = x;
+            x = y;
+            j += k;
+            if (j >= n) j -= n;
+        }
+        a[i] = x;
+        ++i; // move on to the next orbit
+    }
 }
 
 void print(int* a, int n) {

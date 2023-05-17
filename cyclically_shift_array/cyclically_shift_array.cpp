@@ -7,6 +7,8 @@ int getFileLength(FILE*);
 int* readFromFile(FILE*, int);
 void writeInFile(FILE*, int*, int);
 void shift(int*, int);
+void reverse(int*, int);
+void shiftRight(int*, int, int);
 void print(int*, int);
 
 int main(int argc, char* argv[])
@@ -21,6 +23,8 @@ int main(int argc, char* argv[])
     int* a = readFromFile(in,n);
     print(a, n);
     shift(a, n);
+    print(a, n);
+    shiftRight(a, n, 4);
     print(a, n);
     FILE* out = fopen("../cyclically_shift_array/out.txt", "w");
     if (out == NULL) {
@@ -78,6 +82,23 @@ void shift(int* a, int n) {
         a[i] = a[i - 1];
     }
     a[0] = last;
+}
+
+void reverse(int* a, int n) {
+    if (n <= 0) return;
+    int i = 0, j = n-1;
+    while (i < j) {
+        // swap a[i] a[j]
+        int tmp = a[i]; a[i] = a[j]; a[j] = tmp;
+        ++i; --j;
+    }
+}
+
+void shiftRight(int* a, int n, int k) {
+    if (n <= 0 || k == 0) return;
+    reverse(a, n-k);
+    reverse(a+n-k, k);
+    reverse(a, n);
 }
 
 void print(int* a, int n) {

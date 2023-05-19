@@ -59,6 +59,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "deleting_duplicates", "dele
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "binomial_coefficients", "binomial_coefficients\binomial_coefficients.vcxproj", "{1FEC7C95-EF16-4ED9-857B-EF295E99E746}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "number_converter", "number_converter\number_converter.vcxproj", "{1376CDCF-F0B6-4054-9312-D48916C4B5F4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -291,6 +293,14 @@ Global
 		{1FEC7C95-EF16-4ED9-857B-EF295E99E746}.Release|x64.Build.0 = Release|x64
 		{1FEC7C95-EF16-4ED9-857B-EF295E99E746}.Release|x86.ActiveCfg = Release|Win32
 		{1FEC7C95-EF16-4ED9-857B-EF295E99E746}.Release|x86.Build.0 = Release|Win32
+		{1376CDCF-F0B6-4054-9312-D48916C4B5F4}.Debug|x64.ActiveCfg = Debug|x64
+		{1376CDCF-F0B6-4054-9312-D48916C4B5F4}.Debug|x64.Build.0 = Debug|x64
+		{1376CDCF-F0B6-4054-9312-D48916C4B5F4}.Debug|x86.ActiveCfg = Debug|Win32
+		{1376CDCF-F0B6-4054-9312-D48916C4B5F4}.Debug|x86.Build.0 = Debug|Win32
+		{1376CDCF-F0B6-4054-9312-D48916C4B5F4}.Release|x64.ActiveCfg = Release|x64
+		{1376CDCF-F0B6-4054-9312-D48916C4B5F4}.Release|x64.Build.0 = Release|x64
+		{1376CDCF-F0B6-4054-9312-D48916C4B5F4}.Release|x86.ActiveCfg = Release|Win32
+		{1376CDCF-F0B6-4054-9312-D48916C4B5F4}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

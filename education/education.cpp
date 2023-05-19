@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int main()
+int smain()
 {
     int cur;
     cin >> cur;
@@ -21,6 +21,6 @@ int main()
     }
 
     cout << count_max;
-    
+    return 0;
 }
 

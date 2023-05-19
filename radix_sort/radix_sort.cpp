@@ -2,7 +2,7 @@
 #include <assert.h>
 #include <stdlib.h>
 
-void sort(int*, int);
+void convert(int*, int);
 void countingSort(int*, int, int);
 int getMax(int*, int);
 int* fill(int);
@@ -13,7 +13,7 @@ int main()
     int n = 10;
     int* a = fill(n);
     print(a, n);
-    sort(a, n);
+    convert(a, n);
     print(a, n);
     delete[] a;
     return 0;
@@ -23,7 +23,7 @@ int* fill(int n) {
     for (int i = 0; i < n; ++i) a[i] = (int)(rand() % 100);
     return a;
 }
-void sort(int* a, int n) {
+void convert(int* a, int n) {
     // Get maximum element
     int max = getMax(a, n);
 

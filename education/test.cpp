@@ -2,16 +2,13 @@
 
 using namespace std;
 
-void smain()
+void main()
 {
-    int cur = 0;
-    
-    cin >> cur;
-    
-    while (cur)
-    {
-        cin >> cur;
-    }
-
-    cout << cur;
+    int cur = 8;
+    cout << cur % 100 << endl;
+    cout << ~5 << endl;
+    cout << (cur & 1) << endl;
+    cout << (cur |= (1<<0)) << endl;
+    cout << (cur & (1 << 3)) << endl;
+    cout << (15 & (~7)) << endl;
 }

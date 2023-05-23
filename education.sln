@@ -67,6 +67,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "float", "float\float.vcxpro
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "approximate_calculations", "approximate_calculations\approximate_calculations.vcxproj", "{7C576830-8192-480C-B660-6C6762D6A287}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "calculate_exponent", "calculate_exponent\calculate_exponent.vcxproj", "{8BB9C4A9-F126-427F-8C3D-07C251CC6086}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -331,6 +333,14 @@ Global
 		{7C576830-8192-480C-B660-6C6762D6A287}.Release|x64.Build.0 = Release|x64
 		{7C576830-8192-480C-B660-6C6762D6A287}.Release|x86.ActiveCfg = Release|Win32
 		{7C576830-8192-480C-B660-6C6762D6A287}.Release|x86.Build.0 = Release|Win32
+		{8BB9C4A9-F126-427F-8C3D-07C251CC6086}.Debug|x64.ActiveCfg = Debug|x64
+		{8BB9C4A9-F126-427F-8C3D-07C251CC6086}.Debug|x64.Build.0 = Debug|x64
+		{8BB9C4A9-F126-427F-8C3D-07C251CC6086}.Debug|x86.ActiveCfg = Debug|Win32
+		{8BB9C4A9-F126-427F-8C3D-07C251CC6086}.Debug|x86.Build.0 = Debug|Win32
+		{8BB9C4A9-F126-427F-8C3D-07C251CC6086}.Release|x64.ActiveCfg = Release|x64
+		{8BB9C4A9-F126-427F-8C3D-07C251CC6086}.Release|x64.Build.0 = Release|x64
+		{8BB9C4A9-F126-427F-8C3D-07C251CC6086}.Release|x86.ActiveCfg = Release|Win32
+		{8BB9C4A9-F126-427F-8C3D-07C251CC6086}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

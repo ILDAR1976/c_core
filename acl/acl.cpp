@@ -2,7 +2,7 @@
 #include <math.h>
 #include <assert.h>
 
-double acl(double, double, double);
+double log(double, double, double);
 
 int main()
 {
@@ -10,14 +10,14 @@ int main()
     while (true){
         printf("Enter y,a,eps:\n");
         if (scanf_s("%lf%lf%lf", &y, &a, &eps) < 3 || a < 0.) break;
-        x = acl(y, a, eps);
+        x = log(y, a, eps);
         printf("log_a(y) = %lf\n", x);
         printf("Check: a^x = %lf\n", pow(a, x));
     }
     return 0;
 }
 
-double acl(double y, double a, double eps) {
+double log(double y, double a, double eps) {
     assert(a > 0. && a != 1.);
     bool inverse = false;
     if (a < 1.) {

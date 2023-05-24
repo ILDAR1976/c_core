@@ -75,6 +75,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "calculate_matrix", "calcula
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "calculation_interpolation_polynomial", "calculation_interpolation_polynomial\calculation_interpolation_polynomial.vcxproj", "{4C07E18D-1052-4B3B-9A1A-57899B9E2022}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "calculating_integral_simpson", "calculating_integral_simpson\calculating_integral_simpson.vcxproj", "{238DC0B5-BBE1-44CF-BA5C-146DC49A2287}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -371,6 +373,14 @@ Global
 		{4C07E18D-1052-4B3B-9A1A-57899B9E2022}.Release|x64.Build.0 = Release|x64
 		{4C07E18D-1052-4B3B-9A1A-57899B9E2022}.Release|x86.ActiveCfg = Release|Win32
 		{4C07E18D-1052-4B3B-9A1A-57899B9E2022}.Release|x86.Build.0 = Release|Win32
+		{238DC0B5-BBE1-44CF-BA5C-146DC49A2287}.Debug|x64.ActiveCfg = Debug|x64
+		{238DC0B5-BBE1-44CF-BA5C-146DC49A2287}.Debug|x64.Build.0 = Debug|x64
+		{238DC0B5-BBE1-44CF-BA5C-146DC49A2287}.Debug|x86.ActiveCfg = Debug|Win32
+		{238DC0B5-BBE1-44CF-BA5C-146DC49A2287}.Debug|x86.Build.0 = Debug|Win32
+		{238DC0B5-BBE1-44CF-BA5C-146DC49A2287}.Release|x64.ActiveCfg = Release|x64
+		{238DC0B5-BBE1-44CF-BA5C-146DC49A2287}.Release|x64.Build.0 = Release|x64
+		{238DC0B5-BBE1-44CF-BA5C-146DC49A2287}.Release|x86.ActiveCfg = Release|Win32
+		{238DC0B5-BBE1-44CF-BA5C-146DC49A2287}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

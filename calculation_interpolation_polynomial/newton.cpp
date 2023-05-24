@@ -36,7 +36,7 @@ static void computeNewtonPol(
 );
 
 // Array of points defined by mouse
-static const int MAX_POINTS = 8;
+static const int MAX_POINTS = 28;
 static int numPoints = 0;
 static double pointX[MAX_POINTS], pointY[MAX_POINTS];
 
